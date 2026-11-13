@@ -1,0 +1,16 @@
+# Maquina que comprueba movimientos D, I y N.
+
+Estados(q0, q1, q2, qa, qr)
+Inicial(q0)
+Ha(qa)
+He(qr)
+Alfabeto(0, 1, _)
+
+MT(q0, 1) = (q1, 0, D)
+MT(q1, 0) = (q2, 1, I)
+MT(q2, 0) = (qa, 0, N)
+
+MT(q0, 0) = (qr, 0, N)
+MT(q1, 1) = (qr, 1, N)
+MT(q2, 1) = (qr, 1, N)
+MT(q2, _) = (qr, _, N)

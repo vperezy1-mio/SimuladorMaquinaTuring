@@ -1,0 +1,10 @@
+# Maquina que comprueba el movimiento hacia posiciones negativas.
+
+Estados(q0, q1, qa, qr)
+Inicial(q0)
+Ha(qa)
+He(qr)
+Alfabeto(0, 1, _)
+
+MT(q0, 1) = (q1, 1, I)
+MT(q1, _) = (qa, 0, N)

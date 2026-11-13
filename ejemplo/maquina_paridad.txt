@@ -1,0 +1,20 @@
+# Maquina de Turing que reconoce cadenas binarias
+# con cantidad par de unos.
+
+Estados(q0, q1, qa, qr)
+
+Inicial(q0)
+
+Ha(qa)
+
+He(qr)
+
+Alfabeto(0, 1, _)
+
+MT(q0, 0) = (q0, 0, D)
+MT(q0, 1) = (q1, 1, D)
+MT(q0, _) = (qa, _, N)
+
+MT(q1, 0) = (q1, 0, D)
+MT(q1, 1) = (q0, 1, D)
+MT(q1, _) = (qr, _, N)

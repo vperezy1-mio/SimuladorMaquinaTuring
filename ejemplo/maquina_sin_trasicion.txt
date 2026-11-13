@@ -1,0 +1,9 @@
+# Maquina con una transicion inexistente.
+
+Estados(q0, qa, qr)
+Inicial(q0)
+Ha(qa)
+He(qr)
+Alfabeto(0, 1, _)
+
+MT(q0, 0) = (qa, 0, N)
